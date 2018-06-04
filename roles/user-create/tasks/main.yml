@@ -2,7 +2,7 @@
 - name: Creating the users.
   user:
     name: "{{ sname }}"
-    password:  "{{ 'ADMIN' | password_hash('sha512')  }}"
+    password:  "{{ 'admin' | password_hash('sha512')  }}"
     comment: "{{ sfull }}"
     shell: /bin/bash
     group: wheel
